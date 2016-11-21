@@ -13,29 +13,34 @@ public class Main {
 		System.out.println("##################################");
 		System.out.println("##################################");
 		System.out.println("##################################");
-		System.out.println("ESCOLHA UMA OP«√O PARA ACESSAR");
+		System.out.println("ESCOLHA UMA OP√á√ÉO PARA ACESSAR");
 		System.out.println("1 - Cadastrar Aluno");
 		System.out.println("2 - Pesquisar Aluno");
 		System.out.println("3 - Excluir Aluno");
+		System.out.println("4 - Sair");
+
 		
 		do{
 			option = in.nextInt();
 			switch (option) {
 			case 1:
-				System.out.println("\nVOC  ESCOLHEU CADASTRAR ALUNO");
+				System.out.println("\nVOC√ä ESCOLHEU CADASTRAR ALUNO");
+				cadastroAlunos();
 				break;
 			case 2:
-				System.out.println("\nVOC  ESCOLHEU PESQUISAR ALUNO");
+				System.out.println("\nVOC√ä ESCOLHEU PESQUISAR ALUNO");
+				pesquisaAluno();
 				break;
 			case 3:
-				System.out.println("\nVOC  ESCOLHEU EXCLUIR ALUNO");
+				System.out.println("\nVOC√ä ESCOLHEU EXCLUIR ALUNO");
+				excluirAluno();
 				break;
 	
 			default:
-				System.out.println("\nVOC  DIGITOU UM N⁄MERO INV¡LIDO");
+				System.out.println("\nVOC√ä DIGITOU UM N√öMERO INV√ÅLIDO");
 				break;
 			}
-		}while(option<1 || option>3);
+		}while(option != 4);
 
 	}
 
